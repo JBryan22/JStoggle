@@ -47,4 +47,5 @@ img {
 
 #image-toggle {
   background-color: red;
+  cursor: pointer;
 }

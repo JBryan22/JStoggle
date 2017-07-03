@@ -17,11 +17,16 @@ $(document).ready(function() {
   var showing = false;
   $("#image-toggle").click(function() {
     if (showing === false) {
-      $("#secret-picture").fadeToggle();
+      $("#secret-picture").fadeTo("slow", 1);
+
       showing = true;
       $("#image-toggle").text("Click to hide it again!");
     } else {
-      $("#secret-picture").fadeToggle();
+      $("#secret-picture").animate({width: "-=33%"}, "slow");
+      if ($("#secret-picture").width() <= 0) {
+        $("#secret-picture").animate({width: "+=100%"});
+      };
+      $("#secret-picture").fadeTo("slow", 0.2);
       showing = false;
       $("#image-toggle").text("Click to see picture!");
     };
