@@ -1,0 +1,50 @@
+img {
+  width: 50%;
+}
+
+#showing {
+  display:none;
+}
+
+#fadeShowing {
+  display:none;
+}
+
+#slide2{
+  display:none;
+}
+
+.clickable {
+  cursor: pointer;
+  color: #0088cc;
+}
+
+.clickable:hover {
+  text-decoration: underline;
+}
+
+.clickableFade {
+  cursor: pointer;
+  color: #0088cc;
+}
+
+.clickableFade:hover {
+  text-decoration: underline;
+}
+
+.slidable {
+  cursor: pointer;
+  color: #0088cc;
+}
+
+.slidable:hover {
+  text-decoration: underline;
+}
+
+#secret-picture {
+  display:none;
+}
+
+#image-toggle {
+  background-color: red;
+}
